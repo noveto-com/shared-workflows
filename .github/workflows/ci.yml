@@ -9,7 +9,7 @@ jobs:
   docs:
     if: ${{ github.event_name == 'pull_request' || github.ref == 'refs/heads/main' }}
     needs: version
-    uses: noveto-com/shared-workflows/.github/workflows/docs.yml@874dae19b7bcbe5f6a2621b098082f8fa38a300f
+    uses: noveto-com/shared-workflows/.github/workflows/docs.yml@9004c38791f45ec42720d09f77a4368bb3c06c27
     with:
       version: ${{ needs.version.outputs.version }}
       pdf-name: "sharedworkflows.pdf"
